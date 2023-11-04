@@ -1,7 +1,7 @@
-#define GameName "Adi Jr."
-#define GameVersion "4-5 Jahre"
+#define GameName "Adibou 2"
+#define GameVersion "2.12"
 #define GamePublisher "Coktel Vision"
-#define InstallerName "Install {#GameName}"
+//#define InstallerName "Install {#GameName}"
 
 [Setup]
 ; Core Settings
@@ -9,7 +9,7 @@ MinVersion=6.0
 AppId={#GameName}
 AppName={#GameName}
 AppVerName={#GameVersion}
-AppCopyright=1994 {#GamePublisher}
+AppCopyright=1999 {#GamePublisher}
 
 ; Uninstallation Settings
 UninstallFilesDir={app}
@@ -19,7 +19,7 @@ UninstallDisplayName={#GameName}
 
 ; Binary Output Settings
 OutputDir=.
-OutputBaseFilename=adibou1_de_4_5_years
+OutputBaseFilename=adibou2-212-fr
 
 ; Misc Settings
 DisableWelcomePage=no
@@ -28,26 +28,19 @@ DisableProgramGroupPage=yes
 WizardImageFile=
 SetupIconFile=
 
-DefaultDirName=/COKTEL\JUNIOR5
+DefaultDirName=/coktel/Adibou2
 DefaultGroupName=COKTEL
 
 [Languages]
-Name: "German"; MessagesFile: "compiler:Default.isl"
+Name: "French"; MessagesFile: "compiler:Default.isl"
 
 [Messages]
 ; Override WelcomeLabel2 as the default string is awkward in this scenario
-German.WelcomeLabel2=Das Setup installiert {#GameName} {#GameVersion} auf dem PC.
+French.WelcomeLabel2=Das Setup installiert {#GameName} {#GameVersion} auf dem PC.
 
 [Files]
-Source: "{code:GetSourceDrive}DEMO\*"; DestDir: "{app}\DEMO"; Flags: external
-Source: "{code:GetSourceDrive}BOUALL.ITK"; DestDir: "{app}"; Flags: external
-Source: "{code:GetSourceDrive}C51.STK"; DestDir: "{app}"; Flags: external
-Source: "{code:GetSourceDrive}FIVE.ALL"; DestDir: "{app}"; Flags: external
-Source: "{code:GetSourceDrive}INTRO.STK"; DestDir: "{app}"; Flags: external
-Source: "{code:GetSourceDrive}L51.STK"; DestDir: "{app}"; Flags: external
-Source: "{code:GetSourceDrive}MDO.DEF"; DestDir: "{app}"; Flags: external
-Source: "{code:GetSourceDrive}SOUNDLIB.DLL"; DestDir: "{app}"; Flags: external
-Source: "{code:GetSourceDrive}WLOADER.EXE"; DestDir: "{app}"; Flags: external
+Source: "{code:GetSourceDrive}ENVIR\*"; DestDir: "{app}\ENVIR"; Flags: external
+Source: "{code:GetSourceDrive}*"; DestDir: "{app}"; Flags: external
 
 [Code]
 
