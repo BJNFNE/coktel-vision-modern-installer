@@ -99,7 +99,7 @@ begin
 	FindAllCDDrives();
 	if GetArrayLength(DrvLetters) < 1 then
 	begin
-		MsgBox('Keine CD im Laufwerk erkannt. Setup beendet sich', mbError, MB_OK);
+		MsgBox('Le CD est sorti. La configuration est terminée', mbError, MB_OK);
 		Abort;
 	end;
 
@@ -112,7 +112,7 @@ begin
 	begin
 		while FindUniqueFile() = '' do
 		begin
-			if MsgBox('Bitte lege die CD ins Laufwerk ein.', mbConfirmation, MB_OKCANCEL or MB_DEFBUTTON1) = IDOK then
+			if MsgBox('Veuillez insérer le CD dans le lecteur.', mbConfirmation, MB_OKCANCEL or MB_DEFBUTTON1) = IDOK then
 
 			else
 				Abort;
