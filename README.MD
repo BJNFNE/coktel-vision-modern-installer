@@ -1,7 +1,6 @@
 # Modern Installer for Coktel Vision games
 
 # Planned Games
-* Adibou 2
 * Adibou 3
 * ADI 2
 * ADI 4
@@ -14,3 +13,4 @@
 
 # Supported Games
 * Adibou 1
+* Adibou 2
