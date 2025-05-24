@@ -29,7 +29,6 @@ def main():
         "Adiboo_Energy_Config.edp",
         "Adiboo_Energy_Config.exe",
         "Adiboo_Energy_Thieves.exe",
-        "LG.ini",
         "mfc42.dll",
         "MOVIE.EDP",
         "msvcp60.dll",
