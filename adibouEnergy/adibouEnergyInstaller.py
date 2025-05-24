@@ -3,14 +3,14 @@ import shutil
 
 def main():
     # Prompt user for the base source directory where files are stored
-    source_base_dir = input("Enter the full path to the folder containing the source files (e.g., C:\\users\\bjnfne\\Desktop\\AdibooEnergy): ").strip()
+    source_base_dir = input("Enter the full path to the folder containing the source files (e.g., D:\\AdibooEnergy): ").strip()
 
     if not os.path.isdir(source_base_dir):
         print(f"The specified source directory does not exist: {source_base_dir}")
         return
 
     # Prompt user for installation directory path
-    install_dir = input("Enter the full path to the installation directory (e.g., C:\\Program Files\\Adiboo and The Energy Thieves): ").strip()
+    install_dir = input("Enter the full path to the installation directory (e.g., C:\\Program Files (x86)\\Coktel\\Adiboo and The Energy Thieves): ").strip()
 
     if not install_dir:
         print("Installation path cannot be empty.")
@@ -26,7 +26,6 @@ def main():
 
     # List of relative file paths from the source base directory
     relative_files_to_copy = [
-        "MyProg-x64.exe",  # Adjust paths relative to source base dir
         "Adiboo_Energy_Config.edp",
         "Adiboo_Energy_Config.exe",
         "Adiboo_Energy_Thieves.exe",
